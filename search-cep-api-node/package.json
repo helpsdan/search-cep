@@ -1,0 +1,15 @@
+{
+  "name": "search-cep",
+  "version": "1.0.0",
+  "description": "Search CEP Node API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/helpsdan/search-cep/search-cep-api-node"
+  },
+  "author": "Daniel Alves",
+  "license": "ISC"
+}
