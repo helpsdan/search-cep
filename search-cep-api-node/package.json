@@ -8,8 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/helpsdan/search-cep/search-cep-api-node"
+    "url": "https://github.com/helpsdan/search-cep/tree/master/search-cep-api-node"
   },
   "author": "Daniel Alves",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-mocks-http": "^1.10.1"
+  },
+  "devDependencies": {}
 }
