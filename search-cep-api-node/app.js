@@ -1,5 +1,5 @@
 const express = require('express')
-const axios = require('axios')
+const fetch = require("node-fetch");
 
 const app = express()
 
@@ -14,14 +14,20 @@ app.get('/api/search-cep/:cep', (req, res) => {
   
   console.log(cep)
   
-  axios.get(`https://viacep.com.br/ws/${cep}/json`)
-  .then(response => {
-    console.log(response)
-    res.json(response.data)
-  })
-  .catch(error => {
-    console.log(error)
-  });
+  const options = {
+      method: "GET",
+      mode: "cors",
+      cache: "default"
+  }
+
+  fetch(`https://viacep.com.br/ws/${cep}/json/`, options)
+      .then(response => {
+          response.json()
+              .then(data => {
+                res.json(data)
+              })
+      })
+      .catch(e => console.log(e))
 })
 
 module.exports = app;

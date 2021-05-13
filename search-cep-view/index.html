@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search CEP</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
-
 <body>
     <div class="container">
+        <h1>SEARCH CEP</h1>
         <form>
-            <div class="form-group"><label for="CEP" id="cep"></label><input type="text" class="form-control" maxlength="8"></div>
-            <div class="form-group"><label for="Logradouro" id="logradouro"></label><input type="text" class="form-control"></div>
-            <div class="form-group"><label for="Bairro" id="bairro"></label><input type="text" class="form-control"></div>
-            <div class="form-group"><label for="Localidade" id="localidade"></label><input type="text" class="form-control"></div>
-            <div class="form-group"><label for="UF" id="uf"></label><input type="text" class="form-control"></div>
+            <!-- div.form-group*5>label+input.form-control -->
+            <div class="form-group">
+                <label for="CEP">CEP</label>
+                <input type="text" class="form-control" id="cep" maxlength="9">
+            </div>
+            <div class="form-group">
+                <label for="Logradouro">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro">
+            </div>
+            <div class="form-group">
+                <label for="Bairro">Bairro</label>
+                <input type="text" class="form-control" id="bairro"></div>
+            <div class="form-group">
+                <label for="Localidade">Localidade</label>
+                <input type="text" class="form-control" id="localidade">
+            </div>
+            <div class="form-group">
+                <label for="UF">UF</label>
+                <input type="text" class="form-control" id="uf">
+            </div>
         </form>
     </div>
+    <script src="src/js/main.js"></script>
 </body>
-
 </html>
